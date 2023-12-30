@@ -3,8 +3,17 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "rodgerdoger2@gmail.com",
-    "password": "testingPass2"
+    "email": "anotheremail@mailinator.com",
+    "password": "plastword"
+}
+
+### Sign in as an existing user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "anotheremail@mailinator.com",
+    "password": "plastword"
 }
 
 ### Find a user with an id
@@ -23,3 +32,9 @@ content-type: application/json
 {
     "email": "testUpdate@mailinator.com"
 }
+
+###  Get the currently signed in user
+GET http://localhost:3000/auth/whoami
+
+### Sign out
+POST http://localhost:3000/auth/signout

@@ -13,6 +13,10 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    if (!id) {
+      console.log('id is', id);
+      return null;
+    }
     return this.repo.find({ where: { id } });
   }
 
