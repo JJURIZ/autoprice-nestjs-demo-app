@@ -1,6 +1,6 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework demo for CRUD operations. 
+[Nest](https://github.com/nestjs/nest) framework demo for CRUD operations utilizing sqlite.
 
 ## Installation
 
